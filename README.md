@@ -1,6 +1,8 @@
 # Matchismo
 Simple Card Matching Game
 
+![](https://github.com/naeemshaikh90/Matchismo/blob/master/Matchismo.png)
+
 # License
 MIT License
 
