@@ -13,9 +13,20 @@
 - (int)match:(NSArray *)otherCards
 {
     int score = 0;
-    
+    /*
     if ([otherCards count] == 1) {
         PlayingCard *otherCard = [otherCards firstObject];
+        if (otherCard.rank == self.rank) {
+            // Give 4 points for matching the rank
+            score = 4;
+        } else if ([otherCard.suit isEqualToString:self.suit]) {
+            // Give 1 point for matching the suit
+            score = 1;
+        }
+    }*/
+    
+    for (int index = 0; index < [otherCards count]; index++) {
+        PlayingCard *otherCard = otherCards[index];
         if (otherCard.rank == self.rank) {
             // Give 4 points for matching the rank
             score = 4;
